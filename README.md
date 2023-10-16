@@ -22,6 +22,10 @@ code, but you can base yours on test code from other exercises.
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
+- the worst case complexity is when we have to search through every edge of every node. Here, we will have to search through every possible edge of every node to get a complexity of $O(V + E)$
+
+- for example, if we search for a target node from a start node that connects TO nothing, we will have to search though every row / node in our matrix and check for a edge with every possible connection (i.e. we wll need to check for a 1 (edge) in every node (row))
+
 ## Bonus
 
 Implement and analyze breadth-first search.
