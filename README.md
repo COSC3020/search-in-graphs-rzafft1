@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12179937&assignment_repo_type=AssignmentRepo)
 # Search in Graphs
 
 Recall the pseudocode for Depth-First Search:
@@ -20,6 +21,10 @@ code, but you can base yours on test code from other exercises.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+- the worst case complexity is when we have to search through every edge of every node. Here, we will have to search through every possible edge of every node to get a complexity of $O(V + E)$
+
+- for example, if we search for a target node from a start node that connects TO nothing, we will have to search though every row / node in our matrix and check for a edge with every possible connection (i.e. we wll need to check for a 1 (edge) in every node (row))
 
 ## Bonus
 
